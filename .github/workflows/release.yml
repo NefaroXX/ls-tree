@@ -45,7 +45,7 @@ jobs:
           cp "target/${{ matrix.target }}/release/ls-tree${{ matrix.suffix }}" "ls-tree-${{ matrix.target }}${{ matrix.suffix }}"
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ls-tree-${{ matrix.target }}
           path: ls-tree-${{ matrix.target }}${{ matrix.suffix }}
